@@ -11,7 +11,7 @@ This repository contains the code and report for Exercise #3 of the Introduction
 - `loader.py`: Handles data loading and preprocessing, including loading the IMDB dataset, tokenizing reviews using GloVe embeddings, and creating DataLoader objects for training and testing.
 - `test.py`: A utility script to verify the PyTorch version and CUDA availability.
 - `sentiment_start.py`: The main script implementing the RNN, GRU, MLP, and self-attention models, training them, and generating train/test loss plots.
-- `ex2.pdf`: The report detailing the experiments, results, train/test accuracies, sub-scores for specific reviews, and answers to theoretical questions.
+- `Ex3 idl practical.pdf`: The report detailing the experiments, results, train/test accuracies, sub-scores for specific reviews, and answers to theoretical questions.
 - `README.md`: This file, providing an overview of the project and instructions.
 - `.gitignore`: Excludes unnecessary files like the dataset and model checkpoints.
 
@@ -55,7 +55,7 @@ The project implements four neural network architectures for sentiment analysis:
 3. **MLP with Global Average Pooling**: Processes each word through an MLP, averaging sub-scores for the final prediction.
 4. **MLP with Restricted Self-Attention**: Adds a self-attention layer with a 5-word window to capture contextual relationships.
 
-The report (`ex2.pdf`) includes:
+The report (`Ex3 idl practical.pdf`) includes:
 - Experiment results with train/test accuracies for RNN and GRU with different hidden state sizes.
 - Sub-scores for true positive, true negative, false positive, and false negative reviews.
 - Analysis of model performance, including why GRU may outperform RNN for certain reviews.
@@ -67,4 +67,4 @@ The report (`ex2.pdf`) includes:
 - The `.gitignore` file excludes large files like `IMDB Dataset.csv` and model checkpoints to keep the repository lightweight.
 - The code assumes reviews are truncated to 100 words and uses pre-trained GloVe embeddings (100-dimensional) without fine-tuning.
 
-For further details, refer to `ex2.pdf` or contact the authors.
+For further details, refer to `Ex3 idl practical.pdf` or contact the authors.
